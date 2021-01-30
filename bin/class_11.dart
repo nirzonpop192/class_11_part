@@ -4,31 +4,37 @@ import 'dart:io';
 
 // user define function
 // type function
-Function  calculateLeapYear(int local_s_year, int local_e_year) {
+/*Function  calculateLeapYear(int local_s_year, int local_e_year) {
   for (int year = local_s_year; year <= local_e_year; year++) {
     if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
       print('$year is leap year');
     else
       print('$year is not leap year');
   }
-}
+}*/
 
 // user define function
 // type function 2
-  calculateLeapYear_2(int local_s_year, int local_e_year) {
+/*  calculateLeapYear_2(int local_s_year, int local_e_year) {
   for (int year = local_s_year; year <= local_e_year; year++) {
     if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
       print('$year is leap year');
     else
       print('$year is not leap year');
   }
-}
+}*/
 
 // user define function
 // type function 3
 calculateLeapYear_3(int local_s_year, int local_e_year) {
-  for (int year = local_s_year; year <= local_e_year; year++) {
+  /*for (int year = local_s_year; year <= local_e_year; year++) {
     print("${year} ${checkLeapYear(year)}");
+  }*/
+
+  //int year= local_s_year;
+  while( local_s_year <= local_e_year){
+    print("${local_s_year} ${checkLeapYear(local_s_year)}");
+    local_s_year++;
   }
 }
 
